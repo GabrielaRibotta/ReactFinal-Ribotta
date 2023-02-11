@@ -1,0 +1,30 @@
+.tarjetasProducto{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    height: 30rem;
+    position: relative;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+button{
+    position: relative;
+}
+
+.cardTitle{
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+}
+.cardText{
+    font-size: 1rem;
+    text-overflow: ellipsis;
+}
+
+.tarjetasProducto img{
+    max-height: 50%;
+    max-width: 50%;
+    align-self: center;
+}

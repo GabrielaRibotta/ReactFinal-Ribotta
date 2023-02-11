@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100%;
+    background-color: white;
+    margin-bottom: -3rem;
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.greeting{
+    color: black;
+    position: relative;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.greeting p{
+    margin-top: -6rem;
+}

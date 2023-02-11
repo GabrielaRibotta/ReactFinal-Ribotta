@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i{
+    font-size: 2rem;
+    align-self: center;
+    margin-right: 0;
+    color: white;
+}
+
+i:hover{
+    color: black;
+}
+
+@media only screen and (min-width:320px) and (max-width:991px) {
+    i{
+        font-size: 1rem;
+    }
+    i:hover{
+        color: skyblue;
+    }
+}

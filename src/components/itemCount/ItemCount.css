@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    }
+
+button:hover{
+    background-color: steelblue;
+}
+
+.countButton{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+}
+
+.countButton div{
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 1;
+}
+.countButton i{
+    align-self: center;
+    font-size: 1rem;
+}
+.countButton i:hover{
+    color: white;
+}

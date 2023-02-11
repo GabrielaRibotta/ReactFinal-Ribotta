@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nosotros{
+    height: 100%vh;
+    margin-left: 10rem;
+}
+.nosotros p{
+    color: black;
+    font-size: 1rem;
+}
