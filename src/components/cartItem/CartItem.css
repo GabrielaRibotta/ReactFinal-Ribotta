@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cartItem{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.cartItem button{
+    margin-top: -0.5rem;
+}

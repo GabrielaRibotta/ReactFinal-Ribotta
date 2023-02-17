@@ -2,39 +2,39 @@
 import './ItemCount.css';
 
 // Components
-import {useState} from 'react';
+import { useState } from 'react';
 
 
 const ItemCount = (props) => {
             //Count
-            const [count,setCount] = useState(0);
+            let [count,setCount] = useState(0);
 
             //Sumar
             const plusOne = () =>{
                 if(count < props.stock){
-                    setCount(count + 1);
+                    count++
+                    setCount(count)
+                    props.guardarCount(count)
+                }else{
+                    
                 }
             }
     
             //Restar
             const minusOne = () =>{
                 if(count > 0){
-                    setCount(count - 1);
+                    count--
+                    setCount(count)
+                    props.guardarCount(count)
                 }
             }
-            // Agregar a carrito
-            const onAdd = () =>{
-                if(count !== 0){
-                    alert("Producto añadido al carrito");
-                }
-            }
+
     
     return (
         <div className="countButton">
-            <button onClick={plusOne}><i className="fa-solid fa-plus"></i></button>
+            <button disabled={props.stock===0} onClick={(e)=>plusOne(e)}><i className="fa-solid fa-plus"></i></button>
             <div>{count}</div>
-            <button onClick={minusOne}><i className="fa-solid fa-minus"></i></button>
-            <button onClick={onAdd}>Comprar</button>
+            <button disabled={props.stock===0} onClick={minusOne}><i className="fa-solid fa-minus"></i></button>
         </div>
     )
 }

@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divCart{
+    height: 100vh;
+    margin-bottom: -3rem;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+.divCart form label, input{
+    margin: 1rem;
+}

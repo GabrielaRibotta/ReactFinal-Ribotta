@@ -5,6 +5,7 @@ import './Header.css';
 import NavBar from "./navbar/NavBar.js"
 
 const Header = () => {
+
     return (
         <header>
             <NavBar />

@@ -1,3 +1,4 @@
+// Modules
 import { Link } from 'react-router-dom';
 
 // Styles
@@ -25,25 +26,25 @@ const NavBar = () => {
                         <Nav.Link href="/home">Inicio</Nav.Link>
                         <Nav.Link href="/nosotros">Nosotros</Nav.Link>
                         <NavDropdown title="Productos" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">
-                            <Link to="/category/ficcion"><p>Ficción</p></Link>
+                        <NavDropdown.Item href="#action/3.1" as={Link} to="/category/ficcion">
+                            <p>Ficción</p>
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                            <Link to="/category/academicos" ><p>Académicos</p></Link>
+                        <NavDropdown.Item href="#action/3.2" as={Link} to="/category/academicos" >
+                            <p>Académicos</p>
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">
-                            <Link to="/category/infantiles" ><p>Infantiles</p></Link>
+                        <NavDropdown.Item href="#action/3.3" as={Link} to="/category/infantiles">
+                            <p>Infantiles</p>
                         </NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                            <Link to="/productos"><p>Ver Todos</p></Link>
+                        <NavDropdown.Item href="#action/3.4" as={Link} to="/productos">
+                            <p>Ver Todos</p>
                         </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <CartWidget />
+            <Link to="/carrito"><CartWidget /></Link>
         </nav>
     );
 }
