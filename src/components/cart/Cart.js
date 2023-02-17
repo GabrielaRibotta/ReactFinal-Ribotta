@@ -32,7 +32,6 @@ const Cart = () => {
     const [orderId, setOrderId] = useState(undefined);
 
     const sendOrder = async(event) => {
-        event.preventDefault()
     const order = {
             buyer:{
             name : inputs.name,
